@@ -1,0 +1,20 @@
+package async
+version     = 0.0.0.2
+
+sourcedir   = "src"
+authors     = "MarcelineVQ"
+license     = "CC0 (refer to LICENSE file)"
+brief       = "Immutable Size-Indexed Arrays"
+readme      = "README.md"
+homepage    = "https://github.com/MarcelineVQ/idris2-async"
+sourceloc   = "https://github.com/MarcelineVQ/idris2-async.git"
+bugtracker  = "https://github.com/MarcelineVQ/idris2-async/issues"
+
+depends     = base, contrib, linear, network, timeit
+
+modules     = System.Concurrency.MVar
+            , System.Concurrency.Async
+            , System.Concurrency.Chan
+            , Control.Concurrency.MonadRef
+
+main = Control.Concurrency.MonadRef
